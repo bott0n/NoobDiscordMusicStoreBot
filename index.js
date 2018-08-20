@@ -51,8 +51,9 @@ client.on('message', msg => {
             break
 
         case '#skip':
-            server.play.end()
             msg.channel.sendMessage('skipped !')
+            server.play.end()
+            
             break
         case '#random':
             ran()
